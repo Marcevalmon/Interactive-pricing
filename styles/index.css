@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    background-image: url(./../images/bg-pattern.svg);
+    background-repeat: no-repeat;
+    background-color: var(--very-pale-blue);
+    background-size: contain;
+    color: var(--grayish-blue);
+
+}
+
+.header {
+    background-image: url(./../images/pattern-circles.svg);
+    background-repeat: no-repeat;
+    height: 256px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-position-x: center;
+    background-position-y: 58px;
+}
+
+.header>.main {
+    color: var(--dark-desaturated-blue);
+    font-weight: 800;
+    font-size: 28px;
+    margin-top: 14px;
+
+}
+
+.header>.secondary {
+    color: var(--grayish-blue);
+    font-size: 15px;
+    margin: 10px;
+}
+
+.header>.secondary div {
+    display: inline;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--white);
+    box-shadow: rgb(0 0 0 / 5%) 0px 6px 24px 0px;
+    flex-basis: 539px;
+    border-radius: 5px;
+}
+
+.card-content {
+    padding: 44px 46px 19px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.col {
+    flex: auto;
+}
+
+.views {
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.price>.amount {
+    color: var(--dark-desaturated-blue);
+    font-weight: 800;
+    font-size: 39px;
+    margin-right: 8px;
+}
+
+.price>.period {}
+
+.range-picker {
+    margin: 32px 0;
+}
+
+.billing {
+    justify-content: center;
+    margin: 13px 10px 10px 11px;
+    font-size: 12px;
+    align-items: flex-start;
+}
+
+.billing div {
+    flex: none;
+}
+
+.billing>.monthly {
+    margin: 3px;
+}
+
+.billing>.yearly {
+    position: relative;
+    margin: 3px;
+}
+
+.billing>.switch {
+    margin: 0px 12px;
+}
+
+.billing>.yearly>.discount {
+    position: absolute;
+    top: 0;
+    left: calc(100% + 10px);
+    width: max-content;
+    background: var(--primary-light-grayish-red);
+    color: var(--primary-light-red);
+    padding: 2px 7px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.custom-hr {
+    margin: 34px -46px;
+    background-color: var(--light-grayish-blue);
+    height: 1px;
+    border: 0;
+}
+
+.card-footer {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+
+li {
+    margin-bottom: 11px;
+}
+
+li::before {
+    content: '.';
+    color: transparent;
+    background-image: url(./../images/icon-check.svg);
+    background-repeat: no-repeat;
+    padding: 5px;
+    margin: -7px 12px 0 0;
+    background-position-y: center;
+}
+
+.button-container {
+    margin: -17px -3px 0 0;
+}
+
+button {
+    background: var(--dark-desaturated-blue);
+    color: var(--white);
+    padding: 13px;
+    border-radius: 50px;
+    min-width: 169px;
+    border: none;
+}
+
+.show-sm {
+    display: none;
+}

@@ -1,0 +1,59 @@
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+
+    .header {
+        height: 236px;
+    }
+
+    .header>.main {
+        font-size: 21px;
+    }
+
+    .header>.secondary {
+        font-size: 14px;
+        line-height: 2;
+    }
+
+    .header>.secondary div {
+        display: block;
+
+    }
+
+    .card {
+        width: 343px;
+        flex-basis: unset;
+    }
+
+    .card-content .views {
+        text-align: center;
+    }
+
+    .card-content .price {
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    .price>.amount { 
+        font-size: 33px;
+    }
+
+    .card-content .list,
+    .card-content .button-container {
+        flex: 1 0 100%;
+        text-align: center;
+    } 
+
+    .card-content .button-container {
+        margin: 10px;
+    }
+
+    .hidden-sm {
+        display: none;
+    }
+
+    .show-sm {
+        display: block;
+    }
+}
